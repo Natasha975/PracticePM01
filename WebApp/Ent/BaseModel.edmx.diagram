@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f0a257a5645245608727c6d3e95005cd" Name="Diagram1">
+        <EntityTypeShape EntityType="WarehouseModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.Адрес" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.ЗоныХранения" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.Инвентаризация" Width="1.5" PointX="13.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.Клиент" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.Пользователь" Width="1.5" PointX="11" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.Поставщики" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.ПриходнаяНакладная" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.РасходнаяНакладная" Width="1.5" PointX="5.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.Роль" Width="1.5" PointX="8.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.Склад" Width="1.5" PointX="6" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.ТипCклад" Width="1.5" PointX="3.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.Товар" Width="1.5" PointX="6" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.ТоварВНакладной" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="WarehouseModel.ТоварНаСкладе" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="WarehouseModel.FK_Клиент_Адрес" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_Поставщики_Адрес" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_Склад_Адрес" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_Склад_ЗоныХранения" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_Инвентаризация_Пользователь" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_Пользователь_Роль" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_ПриходнаяНакладная_Поставщики" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_ПриходнаяНакладная_ТоварВНакладной" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_РасходнаяНакладная_ТоварВНакладной" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_Склад_ТипCклад" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_ТоварНаСкладе_Склад" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_ТоварВНакладной_Товар" ManuallyRouted="false" />
+        <AssociationConnector Association="WarehouseModel.FK_ТоварНаСкладе_Товар" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
