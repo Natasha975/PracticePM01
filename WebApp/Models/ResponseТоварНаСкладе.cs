@@ -23,7 +23,8 @@ namespace WebApp.Models
 
         public string НазваниеСклада { get; set; }
         public string НазваниеТовара { get; set; }
-        public int Количество { get; set; }
+		public decimal ЦенаЗаЕдиницу { get; set; }
+		public int Количество { get; set; }
         //public int Количество { get; set; }
 
         //public virtual Склад Склад { get; set; }

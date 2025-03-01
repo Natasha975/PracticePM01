@@ -26,6 +26,7 @@ namespace WebApp.Controllers
                 {
                     НазваниеСклада = tns.Склад.НазваниеСклада,
                     НазваниеТовара = tns.Товар.Название,
+                    ЦенаЗаЕдиницу = tns.Товар.ЦенаЗаЕдиницу,
                     Количество = tns.Количество
                 })
                 .ToList();
@@ -36,29 +37,52 @@ namespace WebApp.Controllers
             }
 
             return Ok(result);
-        }
+		}
 
-        // GET: api/ТоварНаСкладе/Номер склада 
-        [ResponseType(typeof(List<ResponseТоварНаСкладе>))]
-        public IHttpActionResult GetТоварыНаСкладеПоСкладу(int складId)
-        {
-            var result = db.ТоварНаСкладе
-                .Where(tns => tns.НомерСклада == складId)
-                .Select(tns => new ResponseТоварНаСкладе
-                {
-                    НазваниеСклада = tns.Склад.НазваниеСклада,
-                    НазваниеТовара = tns.Товар.Название,
-                    Количество = tns.Количество
-                })
-                .ToList();
+        // GET: api/ТоварНаСкладе/НазваниеСклада
+		[ResponseType(typeof(List<ResponseТоварНаСкладе>))]
+		public IHttpActionResult GetТоварыНаСкладеПоНазванию(string названиеСклада)
+		{
+			var result = db.ТоварНаСкладе
+				.Where(tns => tns.Склад.НазваниеСклада == названиеСклада)
+				.Select(tns => new ResponseТоварНаСкладе
+				{
+					НазваниеСклада = tns.Склад.НазваниеСклада,
+					НазваниеТовара = tns.Товар.Название,
+					ЦенаЗаЕдиницу = tns.Товар.ЦенаЗаЕдиницу,
+					Количество = tns.Количество
+				})
+				.ToList();
 
-            if (result == null || result.Count == 0)
-            {
-                return NotFound();
-            }
+			if (result == null || result.Count == 0)
+			{
+				return NotFound();
+			}
 
-            return Ok(result);
-        }
+			return Ok(result);
+		}
+
+		// GET: api/ТоварНаСкладе/Номер склада 
+		//[ResponseType(typeof(List<ResponseТоварНаСкладе>))]
+  //      public IHttpActionResult GetТоварыНаСкладеПоСкладу(int складId)
+  //      {
+  //          var result = db.ТоварНаСкладе
+  //              .Where(tns => tns.НомерСклада == складId)
+  //              .Select(tns => new ResponseТоварНаСкладе
+  //              {
+  //                  НазваниеСклада = tns.Склад.НазваниеСклада,
+  //                  НазваниеТовара = tns.Товар.Название,
+  //                  Количество = tns.Количество
+  //              })
+  //              .ToList();
+
+  //          if (result == null || result.Count == 0)
+  //          {
+  //              return NotFound();
+  //          }
+
+  //          return Ok(result);
+  //      }
 
         //[ResponseType(typeof(List<ResponseТоварНаСкладе>))]
         //public IHttpActionResult GetоварНаСкладе()
@@ -68,83 +92,83 @@ namespace WebApp.Controllers
 
 
         // GET: api/ТоварНаСкладе/5
-        [ResponseType(typeof(ТоварНаСкладе))]
-        public IHttpActionResult GetТоварНаСкладе(int id)
-        {
-            ТоварНаСкладе товарНаСкладе = db.ТоварНаСкладе.Find(id);
-            if (товарНаСкладе == null)
-            {
-                return NotFound();
-            }
+        //[ResponseType(typeof(ТоварНаСкладе))]
+        //public IHttpActionResult GetТоварНаСкладе(int id)
+        //{
+        //    ТоварНаСкладе товарНаСкладе = db.ТоварНаСкладе.Find(id);
+        //    if (товарНаСкладе == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return Ok(товарНаСкладе);
-        }
+        //    return Ok(товарНаСкладе);
+        //}
 
-        // PUT: api/ТоварНаСкладе/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult PutТоварНаСкладе(int id, ТоварНаСкладе товарНаСкладе)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //// PUT: api/ТоварНаСкладе/5
+        //[ResponseType(typeof(void))]
+        //public IHttpActionResult PutТоварНаСкладе(int id, ТоварНаСкладе товарНаСкладе)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            if (id != товарНаСкладе.НомерЗаписи)
-            {
-                return BadRequest();
-            }
+        //    if (id != товарНаСкладе.НомерЗаписи)
+        //    {
+        //        return BadRequest();
+        //    }
 
-            db.Entry(товарНаСкладе).State = EntityState.Modified;
+        //    db.Entry(товарНаСкладе).State = EntityState.Modified;
 
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ТоварНаСкладеExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        //    try
+        //    {
+        //        db.SaveChanges();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!ТоварНаСкладеExists(id))
+        //        {
+        //            return NotFound();
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
 
-            return StatusCode(HttpStatusCode.NoContent);
-        }
+        //    return StatusCode(HttpStatusCode.NoContent);
+        //}
 
         // POST: api/ТоварНаСкладе
-        [ResponseType(typeof(ТоварНаСкладе))]
-        public IHttpActionResult PostТоварНаСкладе(ТоварНаСкладе товарНаСкладе)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //[ResponseType(typeof(ТоварНаСкладе))]
+        //public IHttpActionResult PostТоварНаСкладе(ТоварНаСкладе товарНаСкладе)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            db.ТоварНаСкладе.Add(товарНаСкладе);
-            db.SaveChanges();
+        //    db.ТоварНаСкладе.Add(товарНаСкладе);
+        //    db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = товарНаСкладе.НомерЗаписи }, товарНаСкладе);
-        }
+        //    return CreatedAtRoute("DefaultApi", new { id = товарНаСкладе.НомерЗаписи }, товарНаСкладе);
+        //}
 
         // DELETE: api/ТоварНаСкладе/5
-        [ResponseType(typeof(ТоварНаСкладе))]
-        public IHttpActionResult DeleteТоварНаСкладе(int id)
-        {
-            ТоварНаСкладе товарНаСкладе = db.ТоварНаСкладе.Find(id);
-            if (товарНаСкладе == null)
-            {
-                return NotFound();
-            }
+        //[ResponseType(typeof(ТоварНаСкладе))]
+        //public IHttpActionResult DeleteТоварНаСкладе(int id)
+        //{
+        //    ТоварНаСкладе товарНаСкладе = db.ТоварНаСкладе.Find(id);
+        //    if (товарНаСкладе == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            db.ТоварНаСкладе.Remove(товарНаСкладе);
-            db.SaveChanges();
+        //    db.ТоварНаСкладе.Remove(товарНаСкладе);
+        //    db.SaveChanges();
 
-            return Ok(товарНаСкладе);
-        }
+        //    return Ok(товарНаСкладе);
+        //}
 
         protected override void Dispose(bool disposing)
         {

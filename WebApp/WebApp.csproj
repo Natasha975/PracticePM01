@@ -231,6 +231,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AuthResponse.cs" />
     <Compile Include="Models\ResponseАвтор.cs" />
     <Compile Include="Models\ResponseСклад.cs" />
     <Compile Include="Models\ResponseТовар.cs" />

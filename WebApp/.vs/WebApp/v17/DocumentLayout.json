@@ -1,12 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WebApp\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\WebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53C7810C-0E75-4F02-8A34-806034F44E7C}|WebApp.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\practicepm01\\webapp\\controllers\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044Ccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C7810C-0E75-4F02-8A34-806034F44E7C}|WebApp.csproj|solutionrelative:controllers\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044Ccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C7810C-0E75-4F02-8A34-806034F44E7C}|WebApp.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\WebApp\\models\\response\u0430\u0432\u0442\u043E\u0440.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C7810C-0E75-4F02-8A34-806034F44E7C}|WebApp.csproj|solutionrelative:models\\response\u0430\u0432\u0442\u043E\u0440.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53C7810C-0E75-4F02-8A34-806034F44E7C}|WebApp.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\practicepm01\\webapp\\models\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C7810C-0E75-4F02-8A34-806034F44E7C}|WebApp.csproj|solutionrelative:models\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\WebApp\\Models\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "Models\\AuthResponse.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\WebApp\\Models\\AuthResponse.cs",
+              "RelativeToolTip": "Models\\AuthResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T23:00:11.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Response\u0410\u0432\u0442\u043E\u0440.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\WebApp\\Models\\Response\u0410\u0432\u0442\u043E\u0440.cs",
+              "RelativeDocumentMoniker": "Models\\Response\u0410\u0432\u0442\u043E\u0440.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\WebApp\\Models\\Response\u0410\u0432\u0442\u043E\u0440.cs",
+              "RelativeToolTip": "Models\\Response\u0410\u0432\u0442\u043E\u0440.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T20:59:15.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044CController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\WebApp\\Controllers\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044CController.cs",
+              "RelativeDocumentMoniker": "Controllers\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044CController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\WebApp\\Controllers\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044CController.cs",
+              "RelativeToolTip": "Controllers\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044CController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAD4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T20:56:52.559Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
