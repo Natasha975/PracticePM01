@@ -5,15 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="Авторизация" Height="224" Width="355">
+        Title="Авторизация" Height="322" Width="394">
     <Grid>
         <StackPanel >
             <Label Content="Авторизация" FontSize="16" HorizontalAlignment="Center" Margin="0,10"/>
             <Label Content="Логин"/>
-            <TextBox x:Name="LoginTextBox" Margin="0,0,0,10" />
+            <TextBox x:Name="LoginTextBox" Margin="0,0,0,10" Text="ivanov"/>
             <Label Content="Пароль"/>
-            <TextBox x:Name="PasswordBox" Margin="0,0,0,10" />
-            <Button Content="Войти" Click="LoginButton_Click" Margin="80,5"/>
+            <TextBox x:Name="PasswordBox" Margin="0,0,0,10" Text="password1"/>
+            <Button Content="Войти" x:Name="LoginButton" Click="LoginButton_Click" Margin="80,5"/>
         </StackPanel>
+
+        <Label x:Name="CodeLabel" HorizontalAlignment="Left" Margin="150,200,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <TextBox x:Name="CodeTextBox" HorizontalAlignment="Left" Height="23" Margin="150,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Visibility="Collapsed"/>
+        <Button x:Name="SubmitCodeButton" Content="Подтвердить код" HorizontalAlignment="Left" Margin="150,260,0,0" VerticalAlignment="Top" Width="100" Click="SubmitCodeButton_Click" Visibility="Collapsed"/>
     </Grid>
 </Window>

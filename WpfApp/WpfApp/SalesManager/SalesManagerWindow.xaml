@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp.SalesManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10,10,10,10">
+            <Button Content="Формирование заказа поставщику" Margin="5"/>
+            <Button Content="Формирование заказа клиенту" Margin="5"/>
+            <Button Content="Просмотр накладных и контроль заказов" x:Name="InvoiceViewing" Click="InvoiceViewing_Click" Margin="5"/>
+            <Button Content="Регистрация клиента/поставщика" x:Name="RegClient" Click="RegClient_Click" Margin="5"/>
+            <Label Content="Содержимое складов" HorizontalAlignment="Center" FontSize="17"/>
+            <TreeView x:Name="treeView">
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding Товары}">
+                        <TextBlock Text="{Binding НазваниеСклада}" />
+                        <HierarchicalDataTemplate.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding НаименованиеТовара}" />
+                                    <TextBlock Text=" - " />
+                                    <TextBlock Text="{Binding Количество}" />
+                                    <TextBlock Text=" кол." />
+                                </StackPanel>
+                            </DataTemplate>
+                        </HierarchicalDataTemplate.ItemTemplate>
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+        </StackPanel>
+    </Grid>
+</Window>

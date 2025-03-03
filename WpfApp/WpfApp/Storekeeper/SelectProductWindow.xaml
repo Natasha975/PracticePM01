@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApp.Storekeeper.SelectProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp.Storekeeper"
+        mc:Ignorable="d"
+        Height="300" Width="300">
+    <StackPanel Margin="10">
+        <Label Content="Выбор товара" FontSize="17" HorizontalAlignment="Center"/>
+
+        <Label Content="Выберите склад:" />
+        <ComboBox x:Name="WarehouseComboBox" DisplayMemberPath="НазваниеСклада" Margin="0,0,0,10" SelectionChanged="WarehouseComboBox_SelectionChanged"/>
+
+        <!-- ComboBox для приходной накладной -->
+        <Label Content="Выберите товар (приходная):" x:Name="LabelIncome" Visibility="Collapsed"/>
+        <ComboBox x:Name="ProductComboBoxIncome" DisplayMemberPath="Название" SelectedValuePath="Номер" Visibility="Collapsed" />
+
+        <!-- ComboBox для расходной накладной -->
+        <Label Content="Выберите товар (расходная):" x:Name="LabelOutcome" Visibility="Collapsed"/>
+        <ComboBox x:Name="ProductComboBoxOutcome" SelectedValuePath="Номер" Visibility="Collapsed">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Товар.Название}" />
+                        <TextBlock Text=" (кол. - " />
+                        <TextBlock Text="{Binding Количество}" />
+                        <TextBlock Text=")" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <!--<ComboBox x:Name="ProductComboBox" Margin="0,0,0,10">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Товар.Название}" />
+                        <TextBlock Text=" (кол. - " />
+                        <TextBlock Text="{Binding Количество}" />
+                        <TextBlock Text=")" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>-->
+
+        <Label Content="Количество:" />
+        <TextBox x:Name="QuantityTextBox" Margin="0,0,0,10" />
+
+        <Button Content="Добавить" Click="AddButton_Click" Width="100" HorizontalAlignment="Left" />
+    </StackPanel>
+</Window>
