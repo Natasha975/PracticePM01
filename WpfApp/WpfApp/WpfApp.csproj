@@ -44,12 +44,16 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.2\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="QRCoder, Version=1.6.0.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.6.0\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Pipelines, Version=9.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Pipelines.9.0.2\lib\net462\System.IO.Pipelines.dll</HintPath>
     </Reference>
@@ -98,7 +102,7 @@
     <Compile Include="AccountantWindow.xaml.cs">
       <DependentUpon>AccountantWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AdminWindow.xaml.cs">
+    <Compile Include="Admin\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="ApiService.cs" />
@@ -163,11 +167,14 @@
     <Compile Include="Model\ТоварНаСкладе.cs">
       <DependentUpon>ModelBD.tt</DependentUpon>
     </Compile>
-    <Compile Include="OrderSupplierCustomerWindow.xaml.cs">
+    <Compile Include="SalesManager\OrderSupplierCustomerWindow.xaml.cs">
       <DependentUpon>OrderSupplierCustomerWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SalesManager\RegClientWindow.xaml.cs">
       <DependentUpon>RegClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Storekeeper\ProductQRCodeWindow.xaml.cs">
+      <DependentUpon>ProductQRCodeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Storekeeper\RegistrationInvoiceWindow.xaml.cs">
       <DependentUpon>RegistrationInvoiceWindow.xaml</DependentUpon>
@@ -186,7 +193,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AdminWindow.xaml">
+    <Page Include="Admin\AdminWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,11 +213,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="OrderSupplierCustomerWindow.xaml">
+    <Page Include="SalesManager\OrderSupplierCustomerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SalesManager\RegClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Storekeeper\ProductQRCodeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -279,6 +290,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Accountant\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

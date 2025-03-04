@@ -116,7 +116,7 @@ namespace WpfApp
 				var сумма = (decimal)item.GetType().GetProperty("Сумма").GetValue(item);
 				totalAmount += сумма;
 			}
-			TotalAmountTextBlock.Text = $"Общая сумма: {totalAmount}";
+			TotalAmountTextBlock.Text = $"Общая сумма: {totalAmount.ToString("N2", System.Globalization.CultureInfo.GetCultureInfo("ru-RU"))}";
 		}
 
 		private void SaveInvoiceButton_Click(object sender, RoutedEventArgs e)
@@ -163,40 +163,37 @@ namespace WpfApp
 							ОбщаяСумма = totalAmount
 						};
 
-						//foreach (var item in ItemsDataGrid.Items)
-						//{
-						//	var номерТовара = (int)item.GetType().GetProperty("НомерТовара").GetValue(item);
-						//	var количество = (int)item.GetType().GetProperty("Количество").GetValue(item);
+						foreach (var item in ItemsDataGrid.Items)
+						{
+							var номерТовара = (int)item.GetType().GetProperty("НомерТовара").GetValue(item);
+							var количество = (int)item.GetType().GetProperty("Количество").GetValue(item);
 
-						//	var товарВНакладной = new ТоварВНакладной
-						//	{
-						//		НомерТовара = номерТовара,
-						//		Количество = количество,
-						//		Цена = (decimal)item.GetType().GetProperty("ЦенаЗаЕдиницу").GetValue(item)
-						//	};
-						//	приходнаяНакладная.ТоварВНакладной.Add(товарВНакладной);
+							var товарВНакладной = new ТоварВНакладной
+							{
+								НомерТовара = номерТовара,
+								Количество = количество,
+								Цена = (decimal)item.GetType().GetProperty("ЦенаЗаЕдиницу").GetValue(item)
+							};
+							приходнаяНакладная.ТоварВНакладной = товарВНакладной;
 
-						//	// Обновление или добавление данных в таблицу ТоварНаСкладе
-						//	var товарНаСкладе = db.ТоварНаСкладе
-						//		.FirstOrDefault(t => t.НомерТовара == номерТовара && t.НомерСклада == номерСклада);
+							var товарНаСкладе = db.ТоварНаСкладе
+								.FirstOrDefault(t => t.НомерТовара == номерТовара && t.НомерСклада == номерСклада);
 
-						//	if (товарНаСкладе != null)
-						//	{
-						//		// Если запись найдена, обновляем количество
-						//		товарНаСкладе.Количество += количество;
-						//	}
-						//	else
-						//	{
-						//		// Если записи нет, создаем новую запись
-						//		var новыйТоварНаСкладе = new ТоварНаСкладе
-						//		{
-						//			НомерТовара = номерТовара,
-						//			НомерСклада = номерСклада,
-						//			Количество = количество
-						//		};
-						//		db.ТоварНаСкладе.Add(новыйТоварНаСкладе);
-						//	}
-						//}
+							if (товарНаСкладе != null)
+							{
+								товарНаСкладе.Количество += количество;
+							}
+							else
+							{
+								var новыйТоварНаСкладе = new ТоварНаСкладе
+								{
+									НомерТовара = номерТовара,
+									НомерСклада = номерСклада,
+									Количество = количество
+								};
+								db.ТоварНаСкладе.Add(новыйТоварНаСкладе);
+							}
+						}
 
 						// Добавление товаров в таблицу ТоварВНакладной
 						foreach (var item in ItemsDataGrid.Items)

@@ -1,6 +1,5 @@
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\WpfApp.csproj.AssemblyReference.cache
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\AccountantWindow.g.cs
-C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\AdminWindow.g.cs
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\MainWindow.g.cs
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\App.g.cs
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\WpfApp_Content.g.cs
@@ -35,7 +34,6 @@ C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\bin\Debug\Syste
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\bin\Debug\System.ValueTuple.xml
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\AccountantWindow.baml
-C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\AdminWindow.baml
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\MainWindow.baml
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\WpfApp.g.resources
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\WpfApp.Properties.Resources.resources
@@ -44,8 +42,6 @@ C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\WpfAp
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\WpfApp.csproj.Up2Date
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\WpfApp.exe
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\WpfApp.pdb
-C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\OrderSupplierCustomerWindow.g.cs
-C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\OrderSupplierCustomerWindow.baml
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\SalesManager\RegClientWindow.g.cs
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Storekeeper\RegistrationInvoiceWindow.g.cs
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\SalesManager\SalesManagerWindow.g.cs
@@ -56,3 +52,12 @@ C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Sales
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Storekeeper\StorekeeperWindow.baml
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Storekeeper\SelectProductWindow.g.cs
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Storekeeper\SelectProductWindow.baml
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\SalesManager\InvoiceViewingWindow.g.cs
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\SalesManager\InvoiceViewingWindow.baml
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\bin\Debug\QRCoder.dll
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Storekeeper\ProductQRCodeWindow.g.cs
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Storekeeper\ProductQRCodeWindow.baml
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Admin\AdminWindow.g.cs
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\SalesManager\OrderSupplierCustomerWindow.g.cs
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\Admin\AdminWindow.baml
+C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\SalesManager\OrderSupplierCustomerWindow.baml

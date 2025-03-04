@@ -1,10 +1,12 @@
 ﻿
 
 FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\AccountantWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\AdminWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Admin\AdminWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\SalesManager\InvoiceViewingWindow.xaml;;
 FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\MainWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\OrderSupplierCustomerWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\SalesManager\OrderSupplierCustomerWindow.xaml;;
 FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\SalesManager\RegClientWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Storekeeper\ProductQRCodeWindow.xaml;;
 FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Storekeeper\RegistrationInvoiceWindow.xaml;;
 FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\SalesManager\SalesManagerWindow.xaml;;
 FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Storekeeper\SelectProductWindow.xaml;;

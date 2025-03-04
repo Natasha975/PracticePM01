@@ -10,7 +10,7 @@
         <StackPanel Margin="80,54,295,182">
             <Button Content="Оформление приходной и расходной накладной" Margin="10" x:Name="Invoice" Click="Invoice_Click"/>
             <Button Content="Отправка отчета по инвентаризации" Margin="10"/>
-            <Button Content="Формирование штрихкода товара" Margin="10"/>
+            <Button Content="Формирование штрихкода (QR кода) товара" Margin="10" x:Name="QRCode" Click="QRCode_Click"/>
         </StackPanel>
     </Grid>
 </Window>

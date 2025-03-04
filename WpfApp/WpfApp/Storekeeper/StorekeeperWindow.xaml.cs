@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using WpfApp.Storekeeper;
 
 namespace WpfApp
 {
@@ -17,6 +18,13 @@ namespace WpfApp
 			RegistrationInvoiceWindow reg = new RegistrationInvoiceWindow();
 			reg.Show();
 			this.Close();
-		}		
+		}
+
+		private void QRCode_Click(object sender, RoutedEventArgs e)
+		{
+			ProductQRCodeWindow product = new ProductQRCodeWindow();
+			product.Show();
+			this.Close();
+		}
 	}
 }

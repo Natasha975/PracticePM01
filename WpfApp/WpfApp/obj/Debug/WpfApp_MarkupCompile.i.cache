@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\App.xaml
-10-514816276
+112076774486
 21609216287
-351759635643
-29-1608040005
-AccountantWindow.xaml;AdminWindow.xaml;SalesManager\InvoiceViewingWindow.xaml;MainWindow.xaml;OrderSupplierCustomerWindow.xaml;SalesManager\RegClientWindow.xaml;Storekeeper\RegistrationInvoiceWindow.xaml;SalesManager\SalesManagerWindow.xaml;Storekeeper\SelectProductWindow.xaml;Storekeeper\StorekeeperWindow.xaml;
+36-884368127
+31-1242391562
+AccountantWindow.xaml;Admin\AdminWindow.xaml;SalesManager\InvoiceViewingWindow.xaml;MainWindow.xaml;SalesManager\OrderSupplierCustomerWindow.xaml;SalesManager\RegClientWindow.xaml;Storekeeper\ProductQRCodeWindow.xaml;Storekeeper\RegistrationInvoiceWindow.xaml;SalesManager\SalesManagerWindow.xaml;Storekeeper\SelectProductWindow.xaml;Storekeeper\StorekeeperWindow.xaml;
 
-False
+True
 
