@@ -7,11 +7,16 @@
       "RelativeMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\admin\\adminwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\AppData\\Local\\Temp\\.vsdbgsrc\\c824721cd7d9c028e31d9faa77b348c59e49e6a99818a102ec7b7f9254f84219\\PropertyPathWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\wpfapp\\admin\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\admin\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\wpfapp\\wpfapp\\admin\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\admin\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\wpfapp\\wpfapp\\admin\\\u0441\u043A\u043B\u0430\u0434data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\admin\\\u0441\u043A\u043B\u0430\u0434data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\wpfapp\\wpfapp\\model\\\u0442\u0438\u043Fc\u043A\u043B\u0430\u0434.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|solutionrelative:wpfapp\\model\\\u0442\u0438\u043Fc\u043A\u043B\u0430\u0434.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB4C000E-DD1A-4915-8078-FE715EFD613B}|WpfApp\\WpfApp.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\wpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -25,20 +30,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PropertyPathWorker.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\AppData\\Local\\Temp\\.vsdbgsrc\\c824721cd7d9c028e31d9faa77b348c59e49e6a99818a102ec7b7f9254f84219\\PropertyPathWorker.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c824721cd7d9c028e31d9faa77b348c59e49e6a99818a102ec7b7f9254f84219\\PropertyPathWorker.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\AppData\\Local\\Temp\\.vsdbgsrc\\c824721cd7d9c028e31d9faa77b348c59e49e6a99818a102ec7b7f9254f84219\\PropertyPathWorker.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c824721cd7d9c028e31d9faa77b348c59e49e6a99818a102ec7b7f9254f84219\\PropertyPathWorker.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
-              "ViewState": "AQIAAKoEAAAAAAAAAAAWwLcEAAAEAAAA",
+              "DocumentIndex": 2,
+              "Title": "\u0421\u043A\u043B\u0430\u0434Data.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\WpfApp\\Admin\\\u0421\u043A\u043B\u0430\u0434Data.cs",
+              "RelativeDocumentMoniker": "WpfApp\\Admin\\\u0421\u043A\u043B\u0430\u0434Data.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\WpfApp\\Admin\\\u0421\u043A\u043B\u0430\u0434Data.cs",
+              "RelativeToolTip": "WpfApp\\Admin\\\u0421\u043A\u043B\u0430\u0434Data.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T14:31:17.472Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+              "WhenOpened": "2025-03-04T10:39:20.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "\u0422\u0438\u043FC\u043A\u043B\u0430\u0434.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\WpfApp\\Model\\\u0422\u0438\u043FC\u043A\u043B\u0430\u0434.cs",
+              "RelativeDocumentMoniker": "WpfApp\\Model\\\u0422\u0438\u043FC\u043A\u043B\u0430\u0434.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\WpfApp\\Model\\\u0422\u0438\u043FC\u043A\u043B\u0430\u0434.cs",
+              "RelativeToolTip": "WpfApp\\Model\\\u0422\u0438\u043FC\u043A\u043B\u0430\u0434.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T10:37:46.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,14 +66,14 @@
               "RelativeDocumentMoniker": "WpfApp\\Admin\\AdminWindow.xaml.cs",
               "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\WpfApp\\Admin\\AdminWindow.xaml.cs",
               "RelativeToolTip": "WpfApp\\Admin\\AdminWindow.xaml.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAABEBAAADAAAA",
+              "ViewState": "AQIAAM0AAAAAAAAAAAAkwN4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T14:23:01.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AdminWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\WpfApp\\Admin\\AdminWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp\\Admin\\AdminWindow.xaml",
@@ -67,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\WpfApp\\WpfApp\\App.xaml",
               "RelativeDocumentMoniker": "WpfApp\\App.xaml",

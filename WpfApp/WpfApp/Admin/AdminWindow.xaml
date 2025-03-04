@@ -5,22 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Height="450" Width="800">
+        Title="Администрирование" Height="450" Width="800">
     <Grid>
         <TabControl Margin="10">
             <TabItem Header="Склады">
                 <StackPanel>
-                    <DataGrid x:Name="СкладыDataGrid" AutoGenerateColumns="False" CanUserAddRows="True" >
+                    <DataGrid x:Name="СкладыDataGrid" AutoGenerateColumns="False" CanUserAddRows="True" IsReadOnly="False">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Номер" Binding="{Binding Номер}" IsReadOnly="True"/>
                             <DataGridTextColumn Header="Название склада" Binding="{Binding НазваниеСклада}"/>
-                            <!--<DataGridTextColumn Header="Адрес" Binding="{Binding адрес}"/>-->
-                            <DataGridTextColumn Header="Тип склада" Binding="{Binding ТипСклада}"/>
+                            <DataGridTextColumn Header="Субъект" Binding="{Binding Субъект}"/>
+                            <DataGridTextColumn Header="Улица" Binding="{Binding Улица}"/>
+                            <DataGridTextColumn Header="Дом" Binding="{Binding Дом}"/>
+                            <DataGridComboBoxColumn Header="Тип склада" SelectedItemBinding="{Binding ТипСклада}" DisplayMemberPath="Наименование" SelectedValuePath="Номер">
+                                <DataGridComboBoxColumn.ElementStyle>
+                                    <Style TargetType="ComboBox">
+                                        <Setter Property="ItemsSource" Value="{Binding DataContext.ТипыСкладов, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+                                    </Style>
+                                </DataGridComboBoxColumn.ElementStyle>
+                                <DataGridComboBoxColumn.EditingElementStyle>
+                                    <Style TargetType="ComboBox">
+                                        <Setter Property="ItemsSource" Value="{Binding DataContext.ТипыСкладов, RelativeSource={RelativeSource AncestorType=DataGrid}}"/>
+                                    </Style>
+                                </DataGridComboBoxColumn.EditingElementStyle>
+                            </DataGridComboBoxColumn>
                             <DataGridTextColumn Header="Зоны хранения" Binding="{Binding ЗоныХранения}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Button Content="Сохранить" Click="СохранитьСклады_Click" Margin="5"/>
-                    <Button Content="Удалить" Click="УдалитьСклад_Click" Margin="5"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Сохранить" Width="150" Height="30" Click="СохранитьСклады_Click" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Удалить" Width="150" Height="30" Click="УдалитьСклад_Click" Margin="5"/>
+                    </StackPanel>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Товары">
@@ -37,8 +54,12 @@
                             <DataGridTextColumn Header="Минимальный остаток" Binding="{Binding МинимальныйОстаток}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Button Content="Сохранить" Click="СохранитьТовары_Click"/>
-                    <Button Content="Удалить" Click="УдалитьТовар_Click"/>
+                    <StackPanel Orientation="Horizontal" >
+                        <Button Content="Сохранить" Width="150" Height="30" Click="СохранитьТовары_Click" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <Button Content="Удалить" Width="150" Height="30" Click="УдалитьТовар_Click" Margin="5"/>
+                    </StackPanel>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Клиенты">
@@ -49,11 +70,17 @@
                             <DataGridTextColumn Header="Название" Binding="{Binding Название}"/>
                             <DataGridTextColumn Header="Телефон" Binding="{Binding Tелефон}"/>
                             <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
-                            <DataGridTextColumn Header="Адрес" Binding="{Binding Адрес}"/>
+                            <DataGridTextColumn Header="Субъект" Binding="{Binding Субъект}"/>
+                            <DataGridTextColumn Header="Улица" Binding="{Binding Улица}"/>
+                            <DataGridTextColumn Header="Дом" Binding="{Binding Дом}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Button Content="Сохранить" Click="СохранитьКлиенты_Click"/>
-                    <Button Content="Удалить" Click="УдалитьКлиента_Click"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Сохранить" Click="СохранитьКлиенты_Click" Width="150" Height="30" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Удалить" Click="УдалитьКлиента_Click" Width="150" Height="30" Margin="5"/>
+                    </StackPanel>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Поставщики">
@@ -65,11 +92,17 @@
                             <DataGridTextColumn Header="ИНН/КПП" Binding="{Binding ИННКПП}"/>
                             <DataGridTextColumn Header="Телефон" Binding="{Binding Tелефон}"/>
                             <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
-                            <DataGridTextColumn Header="Адрес" Binding="{Binding Адрес}"/>
+                            <DataGridTextColumn Header="Субъект" Binding="{Binding Субъект}"/>
+                            <DataGridTextColumn Header="Улица" Binding="{Binding Улица}"/>
+                            <DataGridTextColumn Header="Дом" Binding="{Binding Дом}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Button Content="Сохранить" Click="СохранитьПоставщики_Click"/>
-                    <Button Content="Удалить" Click="УдалитьПоставщика_Click"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Сохранить" Click="СохранитьПоставщики_Click" Width="150" Height="30" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Удалить" Click="УдалитьПоставщика_Click" Width="150" Height="30" Margin="5"/>
+                    </StackPanel>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Пользователи">
@@ -85,8 +118,12 @@
                             <DataGridTextColumn Header="Пароль" Binding="{Binding Пароль}"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Button Content="Сохранить" Click="СохранитьПользователи_Click"/>
-                    <Button Content="Удалить" Click="УдалитьПользователя_Click"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Сохранить" Click="СохранитьПользователи_Click" Width="150" Height="30" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Удалить" Click="УдалитьПользователя_Click" Width="150" Height="30" Margin="5"/>
+                    </StackPanel>
                 </StackPanel>
             </TabItem>
         </TabControl>

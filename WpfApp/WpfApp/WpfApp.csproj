@@ -105,6 +105,10 @@
     <Compile Include="Admin\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Admin\КлиентData.cs" />
+    <Compile Include="Admin\ПользовательData.cs" />
+    <Compile Include="Admin\ПоставщикData.cs" />
+    <Compile Include="Admin\СкладData.cs" />
     <Compile Include="ApiService.cs" />
     <Compile Include="AuthResponse.cs" />
     <Compile Include="SalesManager\InvoiceViewingWindow.xaml.cs">
