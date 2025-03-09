@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "OA3WL5Ev/5Lez7QRpaxMS5Q1eVk9nK5F9vYDa6s/UFjap81DlwdowPNxILnkigJb2kc0Zv9W0LcwTVRzS4uYJQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Наталья\\Documents\\Практика\\MobileApp\\MobileApp\\MobileApp\\MobileApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Наталья\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Наталья\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Наталья\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512",
+    "C:\\Users\\Наталья\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Наталья\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Наталья\\.nuget\\packages\\xamarin.forms\\5.0.0.2662\\xamarin.forms.5.0.0.2662.nupkg.sha512",
+    "C:\\Users\\Наталья\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2662\\xamarin.forms.maps.5.0.0.2662.nupkg.sha512",
+    "C:\\Users\\Наталья\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512",
+    "C:\\Users\\Наталья\\.nuget\\packages\\zxing.net.mobile.forms\\2.4.1\\zxing.net.mobile.forms.2.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.CodeVerificationPage" Title="Ввод кода">
+    <ContentPage.Content>
+        
+        <StackLayout VerticalOptions="Center" Padding="20">
+            <Label x:Name="CodeLabel" FontSize="20" HorizontalOptions="Center" />
+            <Entry x:Name="CodeEntry" Placeholder="Введите код" Keyboard="Numeric" />
+            <Button Text="Ввести" x:Name="SubmitButton" Clicked="SubmitButton_Clicked" />
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

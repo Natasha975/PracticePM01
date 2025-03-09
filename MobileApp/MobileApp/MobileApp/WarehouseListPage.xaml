@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.WarehouseListPage">
+    
+    <StackLayout Padding="20">
+        <ListView x:Name="WarehouseListView" HasUnevenRows="True" ItemSelected="WarehouseListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" Orientation="Horizontal">
+                            <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100" Aspect="AspectFill" />
+                            <StackLayout Padding="10" VerticalOptions="Center" Spacing="5">
+                                <Label Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" />
+                                <Label Text="{Binding Address}" FontSize="Small" LineBreakMode="WordWrap" />
+                                <Label Text="{Binding WarehouseType}" FontSize="Small" />
+                                <Label Text="{Binding StorageZone}" FontSize="Small" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    
+</ContentPage>
