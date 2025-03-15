@@ -8,11 +8,11 @@ namespace LibraryProduct
 {
 	public class Product
 	{
-		public int Id { get; set; } // Идентификатор товара
-		public string Name { get; set; } // Название товара
-		public string Category { get; set; } // Категория товара
-		public decimal Price { get; set; } // Цена товара
-		public int Quantity { get; set; } // Количество товара
-		public int WarehouseId { get; set; } // Идентификатор склада
+		public int Id { get; set; }
+		public string Name { get; set; }
+		public string Category { get; set; }
+		public decimal Price { get; set; }
+		public int Quantity { get; set; }
+		public int WarehouseId { get; set; }
 	}
 }

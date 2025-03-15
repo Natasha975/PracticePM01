@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using WpfApp.Model;
@@ -10,7 +11,8 @@ namespace WpfApp.Storekeeper
 	/// </summary>
 	public partial class SelectProductWindow : Window
 	{
-		public object ВыбранныйТовар { get; private set; } // Может быть Товар или ТоварНаСкладе
+		// Может быть Товар или ТоварНаСкладе
+		public object ВыбранныйТовар { get; private set; }
 		public int Количество { get; private set; }
 		private string ТипНакладной { get; set; }
 		public Склад ВыбранныйСклад { get; private set; }
@@ -21,6 +23,7 @@ namespace WpfApp.Storekeeper
 			ТипНакладной = типНакладной;
 			LoadWarehouses();
 			UpdateProductComboBoxVisibility();
+
 		}
 
 		private void LoadWarehouses()

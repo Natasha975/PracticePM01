@@ -13,6 +13,7 @@ namespace WpfApp.Admin
 		public string Tелефон { get; set; }
 		public string Email { get; set; }
 		public string Субъект { get; set; }
+		public string Город { get; set; }
 		public string Улица { get; set; }
 		public int Дом { get; set; }
 	}

@@ -12,6 +12,7 @@ namespace WpfApp.Admin
 		public int Номер { get; set; }
 		public string НазваниеСклада { get; set; }
 		public string Субъект { get; set; }
+		public string Город { get; set; }
 		public string Улица { get; set; }
 		public int Дом { get; set; }
 		public ТипCклад ТипСклада { get; set; }

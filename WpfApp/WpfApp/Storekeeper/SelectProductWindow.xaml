@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp.Storekeeper"
         mc:Ignorable="d"
-        Height="300" Width="300">
+        Title="Склад" Height="300" Width="300">
     <StackPanel Margin="10">
         <Label Content="Выбор товара" FontSize="17" HorizontalAlignment="Center"/>
 
@@ -30,19 +30,6 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        
-        <!--<ComboBox x:Name="ProductComboBox" Margin="0,0,0,10">
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Товар.Название}" />
-                        <TextBlock Text=" (кол. - " />
-                        <TextBlock Text="{Binding Количество}" />
-                        <TextBlock Text=")" />
-                    </StackPanel>
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>-->
 
         <Label Content="Количество:" />
         <TextBox x:Name="QuantityTextBox" Margin="0,0,0,10" />

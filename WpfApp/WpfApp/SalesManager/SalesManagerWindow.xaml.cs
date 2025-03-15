@@ -2,23 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using WpfApp.Code;
 using WpfApp.Model;
 
-namespace WpfApp
+namespace WpfApp.SalesManager
 {
 	/// <summary>
 	/// Логика взаимодействия для SalesManagerWindow.xaml
 	/// </summary>
 	public partial class SalesManagerWindow : Window
 	{
-		public SalesManagerWindow()
+		private Пользователь currentUser;
+
+		public SalesManagerWindow(Пользователь user)
 		{
 			InitializeComponent();
-			LoadData();
+			currentUser = user;
+
 		}
 
 		public void LoadData()
 		{
+			StackWar.Visibility = Visibility.Visible;
 			try
 			{
 				using (var db = new WarEntities())
@@ -62,18 +67,40 @@ namespace WpfApp
 			public int Количество { get; set; }
 		}
 
+		private void Ber_Click(object sender, RoutedEventArgs e)
+		{
+			CodeWindow main = new CodeWindow();
+			main.Show();
+			this.Close();
+		}
+
+		private void WerSee_Click(object sender, RoutedEventArgs e)
+		{
+			LoadData();
+		}
+
 		private void RegClient_Click(object sender, RoutedEventArgs e)
 		{
-			RegClientWindow regClientWindow = new RegClientWindow();
-			regClientWindow.Show();
-			this.Close();
+			StackWar.Visibility = Visibility.Collapsed;
+
+			MainFrame.Navigate(new RegClientPage());
 		}
 
 		private void InvoiceViewing_Click(object sender, RoutedEventArgs e)
 		{
-			InvoiceViewingWindow invoice = new InvoiceViewingWindow();
-			invoice.Show();
-			this.Close();
+			MainFrame.Navigate(new InvoiceViewingPage());
 		}
-    }
+
+		private void BtnProfile_Click(object sender, RoutedEventArgs e)
+		{
+			StackWar.Visibility = Visibility.Collapsed;
+
+			MainFrame.Navigate(new UserProfilePage(currentUser));
+		}
+
+		private void Order_Click(object sender, RoutedEventArgs e)
+		{
+			MainFrame.Navigate(new OrderSupplierPage());
+		}
+	}
 }

@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp.Code.CodeVerificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp.Code"
+        mc:Ignorable="d"
+        Title="Склад" Height="300" Width="400" WindowStartupLocation="CenterScreen" MinHeight="300" MinWidth="400">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label HorizontalAlignment="Center" Grid.Row="0" Margin="0,56,0,0" FontSize="16" Content="Введите код"/>
+        <TextBox x:Name="CodeTextBox" Grid.Row="1" HorizontalAlignment="Center" Height="30" Margin="0,10,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="SubmitCodeButton" Grid.Row="2" Content="Войти" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="200" Click="SubmitCodeButton_Click"/>
+        <Label x:Name="CodeLabel" Grid.Row="3" HorizontalAlignment="Left" Margin="100,20,0,0" VerticalAlignment="Top"/>
+    </Grid>
+
+</Window>

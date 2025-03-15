@@ -1,14 +1,26 @@
 ﻿
-
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\AccountantWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Admin\AdminWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\SalesManager\InvoiceViewingWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\MainWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\SalesManager\OrderSupplierCustomerWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\SalesManager\RegClientWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Storekeeper\ProductQRCodeWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Storekeeper\RegistrationInvoiceWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\SalesManager\SalesManagerWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Storekeeper\SelectProductWindow.xaml;;
-FC:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\Storekeeper\StorekeeperWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\App.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Accountant\AccountantWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Accountant\BalanceReportPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Accountant\InventoryReportPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Accountant\TurnoverReportPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Accountant\WarehouseReportPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Admin\AdminWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Admin\ClientsPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Admin\ProductsPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Admin\SuppliersPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Admin\UsersPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Admin\WarehousePage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Code\CodeVerificationWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Code\CodeWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\SalesManager\InvoiceViewingPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\SalesManager\OrderSupplierPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\SalesManager\RegClientPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\SalesManager\SalesManagerWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Storekeeper\InventoryReportPage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Storekeeper\ProductCodePage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Storekeeper\RegistrationInvoicePage.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Storekeeper\SelectProductWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\Storekeeper\StorekeeperWindow.xaml;;
+FC:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\UserProfilePage.xaml;;
 

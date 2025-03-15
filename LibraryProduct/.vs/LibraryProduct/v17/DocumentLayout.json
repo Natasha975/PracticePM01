@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\",
+  "WorkspaceRootPath": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA774ECB-8957-4CA5-9749-F541971F1CF7}|UnitTestProject1\\UnitTestProject1.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\practicepm01\\libraryproduct\\unittestproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA774ECB-8957-4CA5-9749-F541971F1CF7}|UnitTestProject1\\UnitTestProject1.csproj|solutionrelative:unittestproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\libraryproduct\\warehouseserviceapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|solutionrelative:libraryproduct\\warehouseserviceapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\practicepm01\\libraryproduct\\libraryproduct\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\libraryproduct\\libraryproduct\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|solutionrelative:libraryproduct\\warehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43A8C4BD-85A4-419E-8467-B2E7665FD7CD}|UnitTestProject\\UnitTestProject.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\practicepm01\\libraryproduct\\unittestproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43A8C4BD-85A4-419E-8467-B2E7665FD7CD}|UnitTestProject\\UnitTestProject.csproj|solutionrelative:unittestproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B868E67F-582B-4037-8672-9F5B5C5974F9}|UnitTestProject\\UnitTestProject.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\unittestproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B868E67F-582B-4037-8672-9F5B5C5974F9}|UnitTestProject\\UnitTestProject.csproj|solutionrelative:unittestproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\documents\\practicepm01\\libraryproduct\\libraryproduct\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|solutionrelative:libraryproduct\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\libraryproduct\\productstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE142A4F-D72B-4381-8A33-AC2ACE05C75B}|LibraryProduct\\LibraryProduct.csproj|solutionrelative:libraryproduct\\productstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\UnitTestProject1\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "UnitTestProject1\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\UnitTestProject1\\UnitTest1.cs",
-              "RelativeToolTip": "UnitTestProject1\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "WarehouseService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\LibraryProduct\\WarehouseService.cs",
+              "RelativeDocumentMoniker": "LibraryProduct\\WarehouseService.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\LibraryProduct\\WarehouseService.cs",
+              "RelativeToolTip": "LibraryProduct\\WarehouseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T10:22:08.491Z",
+              "WhenOpened": "2025-03-13T21:08:06.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\UnitTestProject\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\UnitTestProject\\UnitTest1.cs",
               "RelativeDocumentMoniker": "UnitTestProject\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\UnitTestProject\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\UnitTestProject\\UnitTest1.cs",
               "RelativeToolTip": "UnitTestProject\\UnitTest1.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAFAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:50:30.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WarehouseService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\LibraryProduct\\WarehouseService.cs",
-              "RelativeDocumentMoniker": "LibraryProduct\\WarehouseService.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\LibraryProduct\\WarehouseService.cs",
-              "RelativeToolTip": "LibraryProduct\\WarehouseService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwCMAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:25:52.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T20:20:10.835Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\LibraryProduct\\Product.cs",
-              "RelativeDocumentMoniker": "LibraryProduct\\Product.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\PracticePM01\\LibraryProduct\\LibraryProduct\\Product.cs",
-              "RelativeToolTip": "LibraryProduct\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAACAAAA",
+              "Title": "ProductStock.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\LibraryProduct\\ProductStock.cs",
+              "RelativeDocumentMoniker": "LibraryProduct\\ProductStock.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\LibraryProduct\\ProductStock.cs",
+              "RelativeToolTip": "LibraryProduct\\ProductStock.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T09:25:16.975Z",
+              "WhenOpened": "2025-03-13T19:32:46.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WarehouseServiceAPI.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\LibraryProduct\\WarehouseServiceAPI.cs",
+              "RelativeDocumentMoniker": "LibraryProduct\\WarehouseServiceAPI.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Documents\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\LibraryProduct\\LibraryProduct\\WarehouseServiceAPI.cs",
+              "RelativeToolTip": "LibraryProduct\\WarehouseServiceAPI.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T19:11:54.624Z",
               "EditorCaption": ""
             }
           ]

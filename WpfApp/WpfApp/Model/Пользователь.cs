@@ -26,7 +26,8 @@ namespace WpfApp.Model
         public string Отчество { get; set; }
         public int Роль { get; set; }
         public string Логин { get; set; }
-        public string Пароль { get; set; }
+        public string ХэшПароль { get; set; }
+        public byte[] Фото { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Инвентаризация> Инвентаризация { get; set; }

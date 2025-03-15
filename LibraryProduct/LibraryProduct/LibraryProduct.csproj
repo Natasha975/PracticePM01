@@ -80,8 +80,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Product.cs" />
+    <Compile Include="ProductStock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WarehouseService.cs" />
+    <Compile Include="WarehouseServiceAPI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

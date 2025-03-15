@@ -11,96 +11,97 @@ namespace LibraryProduct
 {
 	public class WarehouseService
 	{
+        private List<Product> products;
 
-		private List<Product> _products;
+        public WarehouseService(List<Product> products)
+        {
+            products = products ?? throw new ArgumentNullException(nameof(products));
+        }
 
-		public WarehouseService(List<Product> products)
-		{
-			_products = products ?? throw new ArgumentNullException(nameof(products));
-		}
-
-		// Метод для получения данных от API
-		public static async Task<List<Product>> GetProductsFromApiAsync(string apiUrl)
-		{
-			using (var httpClient = new HttpClient())
+        // Подсчет общего количества товаров на всех складах
+        public int GetTotalQuantity()
+        {
+			var products = new List<Product>
 			{
-				// Отправляем GET-запрос к API
-				var response = await httpClient.GetAsync(apiUrl);
+				new Product { Id = 1, Name = "Ноутбук", Quantity = 10, Price = 50000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 2, Name = "Монитор", Quantity = 5, Price = 20000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 3, Name = "Стул", Quantity = 20, Price = 3000, WarehouseId = 2, Category = "Мебель" },
+				new Product { Id = 4, Name = "Стол", Quantity = 15, Price = 7000, WarehouseId = 2, Category = "Мебель" }
+			};
 
-				// Проверяем, что запрос успешен
-				response.EnsureSuccessStatusCode();
+			return products.Sum(p => p.Quantity);
+        }
 
-				// Читаем ответ как строку
-				var jsonResponse = await response.Content.ReadAsStringAsync();
+        // Подсчет количества товаров на конкретном складе
+        public int GetQuantityByWarehouse(int warehouseId)
+        {
+			var products = new List<Product>
+			{
+				new Product { Id = 1, Name = "Ноутбук", Quantity = 10, Price = 50000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 2, Name = "Монитор", Quantity = 5, Price = 20000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 3, Name = "Стул", Quantity = 20, Price = 3000, WarehouseId = 2, Category = "Мебель" },
+				new Product { Id = 4, Name = "Стол", Quantity = 15, Price = 7000, WarehouseId = 2, Category = "Мебель" }
+			};
 
-				// Десериализуем JSON в список объектов Product
-				var products = System.Text.Json.JsonSerializer.Deserialize<List<Product>>(jsonResponse, new JsonSerializerOptions
-				{
-					PropertyNameCaseInsensitive = true // Игнорируем регистр свойств
-				});
+			return products
+                .Where(p => p.WarehouseId == warehouseId)
+                .Sum(p => p.Quantity);
+        }
 
-				return products;
-			}
-		}
+        // Подсчет общей стоимости товаров на всех складах
+        public decimal GetTotalCost()
+        {
+			var products = new List<Product>
+			{
+				new Product { Id = 1, Name = "Ноутбук", Quantity = 10, Price = 50000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 2, Name = "Монитор", Quantity = 5, Price = 20000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 3, Name = "Стул", Quantity = 20, Price = 3000, WarehouseId = 2, Category = "Мебель" },
+				new Product { Id = 4, Name = "Стол", Quantity = 15, Price = 7000, WarehouseId = 2, Category = "Мебель" }
+			};
 
-		// Остальные методы библиотеки (GetTotalQuantity, GetQuantityByWarehouse и т.д.)
-		public int GetTotalQuantity() => _products.Sum(p => p.Quantity);
-		public int GetQuantityByWarehouse(int warehouseId) => _products.Where(p => p.WarehouseId == warehouseId).Sum(p => p.Quantity);
-		public decimal GetTotalCost() => _products.Sum(p => p.Price * p.Quantity);
-		public decimal GetCostByWarehouse(int warehouseId) => _products.Where(p => p.WarehouseId == warehouseId).Sum(p => p.Price * p.Quantity);
-		public Dictionary<string, int> GetQuantityByCategory() => _products.GroupBy(p => p.Category).ToDictionary(g => g.Key, g => g.Sum(p => p.Quantity));
-		public Dictionary<string, int> GetQuantityByCategoryAndWarehouse(int warehouseId) => _products.Where(p => p.WarehouseId == warehouseId).GroupBy(p => p.Category).ToDictionary(g => g.Key, g => g.Sum(p => p.Quantity));
-		//// Список товаров (данные, полученные от API)
-		//private List<Product> products;
+			return products.Sum(p => p.Price * p.Quantity);
+        }
 
-		//public WarehouseService(List<Product> products)
-		//{
-		//	products = products ?? throw new ArgumentNullException(nameof(products));
-		//}
+        // Подсчет стоимости товаров на конкретном складе
+        public decimal GetCostByWarehouse(int warehouseId)
+        {
+			var products = new List<Product>
+			{
+				new Product { Id = 1, Name = "Ноутбук", Quantity = 10, Price = 50000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 2, Name = "Монитор", Quantity = 5, Price = 20000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 3, Name = "Стул", Quantity = 20, Price = 3000, WarehouseId = 2, Category = "Мебель" },
+				new Product { Id = 4, Name = "Стол", Quantity = 15, Price = 7000, WarehouseId = 2, Category = "Мебель" }
+			};
 
-		//// 1. Подсчет общего количества товаров на всех складах
-		//public int GetTotalQuantity()
-		//{
-		//	return products.Sum(p => p.Quantity);
-		//}
+			return products
+                .Where(p => p.WarehouseId == warehouseId)
+                .Sum(p => p.Price * p.Quantity);
+        }
 
-		//// 2. Подсчет количества товаров на конкретном складе
-		//public int GetQuantityByWarehouse(int warehouseId)
-		//{
-		//	return products
-		//		.Where(p => p.WarehouseId == warehouseId)
-		//		.Sum(p => p.Quantity);
-		//}
+        // Подсчет количества товаров по категориям на всех складах
+        public Dictionary<string, int> GetQuantityByCategory()
+        {
+			var products = new List<Product>
+			{
+				new Product { Id = 1, Name = "Ноутбук", Quantity = 10, Price = 50000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 2, Name = "Монитор", Quantity = 5, Price = 20000, WarehouseId = 1, Category = "Электроника" },
+				new Product { Id = 3, Name = "Стул", Quantity = 20, Price = 3000, WarehouseId = 2, Category = "Мебель" },
+				new Product { Id = 4, Name = "Стол", Quantity = 15, Price = 7000, WarehouseId = 2, Category = "Мебель" }
+			};
 
-		//// 3. Подсчет общей стоимости товаров на всех складах
-		//public decimal GetTotalCost()
-		//{
-		//	return products.Sum(p => p.Price * p.Quantity);
-		//}
+			return products
+                .GroupBy(p => p.Category)
+                .ToDictionary(g => g.Key, g => g.Sum(p => p.Quantity));
+        }
 
-		//// 4. Подсчет стоимости товаров на конкретном складе
-		//public decimal GetCostByWarehouse(int warehouseId)
-		//{
-		//	return products
-		//		.Where(p => p.WarehouseId == warehouseId)
-		//		.Sum(p => p.Price * p.Quantity);
-		//}
+        // Подсчет количества товаров по категориям на конкретном складе
+        public Dictionary<string, int> GetQuantityByCategoryAndWarehouse(int warehouseId)
+        {
 
-		//// 5. Подсчет количества товаров по категориям на всех складах
-		//public Dictionary<string, int> GetQuantityByCategory()
-		//{
-		//	return products
-		//		.GroupBy(p => p.Category)
-		//		.ToDictionary(g => g.Key, g => g.Sum(p => p.Quantity));
-		//}
-
-		//// 6. Подсчет количества товаров по категориям на конкретном складе
-		//public Dictionary<string, int> GetQuantityByCategoryAndWarehouse(int warehouseId)
-		//{
-		//	return products
-		//		.Where(p => p.WarehouseId == warehouseId)
-		//		.GroupBy(p => p.Category)
-		//		.ToDictionary(g => g.Key, g => g.Sum(p => p.Quantity));
-		//}
-	}
+			return products
+                .Where(p => p.WarehouseId == warehouseId)
+                .GroupBy(p => p.Category)
+                .ToDictionary(g => g.Key, g => g.Sum(p => p.Quantity));
+        }
+    }
 }

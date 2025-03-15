@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\obj\Debug\
+C:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\obj\Debug\
 WpfApp
 none
 false
 DEBUG;TRACE
-C:\Users\Наталья\Documents\Практика\WpfApp\WpfApp\App.xaml
-112076774486
-21609216287
-39539703405
-31-1242391562
-AccountantWindow.xaml;Admin\AdminWindow.xaml;SalesManager\InvoiceViewingWindow.xaml;MainWindow.xaml;SalesManager\OrderSupplierCustomerWindow.xaml;SalesManager\RegClientWindow.xaml;Storekeeper\ProductQRCodeWindow.xaml;Storekeeper\RegistrationInvoiceWindow.xaml;SalesManager\SalesManagerWindow.xaml;Storekeeper\SelectProductWindow.xaml;Storekeeper\StorekeeperWindow.xaml;
+C:\Users\Наталья\Documents\Практика\Мобильное приложение\WpfApp\WpfApp\App.xaml
+23-1935618473
+2-1372435529
+52-482321783
+24-1454926487
+Accountant\AccountantWindow.xaml;Accountant\BalanceReportPage.xaml;Accountant\InventoryReportPage.xaml;Accountant\TurnoverReportPage.xaml;Accountant\WarehouseReportPage.xaml;Admin\AdminWindow.xaml;Admin\ClientsPage.xaml;Admin\ProductsPage.xaml;Admin\SuppliersPage.xaml;Admin\UsersPage.xaml;Admin\WarehousePage.xaml;Code\CodeVerificationWindow.xaml;Code\CodeWindow.xaml;SalesManager\InvoiceViewingPage.xaml;SalesManager\OrderSupplierPage.xaml;SalesManager\RegClientPage.xaml;SalesManager\SalesManagerWindow.xaml;Storekeeper\InventoryReportPage.xaml;Storekeeper\ProductCodePage.xaml;Storekeeper\RegistrationInvoicePage.xaml;Storekeeper\SelectProductWindow.xaml;Storekeeper\StorekeeperWindow.xaml;UserProfilePage.xaml;
 
 False
 

@@ -28,10 +28,8 @@ namespace WpfApp.Model
         public string Город { get; set; }
         public string Улица { get; set; }
         public int Дом { get; set; }
-
-		public string FullAddress => $"{Страна}, {Город}, {Улица}, {Дом}";
-
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Клиент> Клиент { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Поставщики> Поставщики { get; set; }

@@ -1,0 +1,23 @@
+﻿<Page x:Class="WpfApp.Accountant.TurnoverReportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp.Accountant"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" >
+
+    <StackPanel Margin="10,5,10,10">
+        <Label Content="Отчет по оборотам" HorizontalContentAlignment="Center" FontSize="17"/>
+
+        <DataGrid x:Name="TurnoverDataGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Артикул" Binding="{Binding Товар.Артикул}" />
+                <DataGridTextColumn Header="Название товара" Binding="{Binding Товар.Название}" />
+                <DataGridTextColumn Header="Приход" Binding="{Binding Приход}" />
+                <DataGridTextColumn Header="Расход" Binding="{Binding Расход}" />
+                <DataGridTextColumn Header="Сумма" Binding="{Binding Сумма}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Page>

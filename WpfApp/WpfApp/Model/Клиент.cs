@@ -19,9 +19,7 @@ namespace WpfApp.Model
         public string Tелефон { get; set; }
         public string Email { get; set; }
         public int Адрес { get; set; }
-
-		public string ОтображаемоеИмя => $"{Название} | {Tелефон} | {Email}";
-
-		public virtual Адрес Адрес1 { get; set; }
+    
+        public virtual Адрес Адрес1 { get; set; }
     }
 }

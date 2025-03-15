@@ -17,8 +17,9 @@ namespace WpfApp.Model
         public int Номер { get; set; }
         public System.DateTime ДатаПроведения { get; set; }
         public int Ответственный { get; set; }
-        public string Результаты { get; set; }
+        public int Результаты { get; set; }
     
         public virtual Пользователь Пользователь { get; set; }
+        public virtual РезИнвентаризации РезИнвентаризации { get; set; }
     }
 }

@@ -17,6 +17,7 @@ namespace WpfApp.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Товар()
         {
+            this.РезИнвентаризации = new HashSet<РезИнвентаризации>();
             this.ТоварВНакладной = new HashSet<ТоварВНакладной>();
             this.ТоварНаСкладе = new HashSet<ТоварНаСкладе>();
         }
@@ -31,6 +32,8 @@ namespace WpfApp.Model
         public Nullable<int> СерийныйНомер { get; set; }
         public int МинимальныйОстаток { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<РезИнвентаризации> РезИнвентаризации { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ТоварВНакладной> ТоварВНакладной { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
