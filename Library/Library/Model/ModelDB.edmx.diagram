@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="34f00b71bfee42198bdd20d57a446092" Name="Diagram1">
+        <EntityTypeShape EntityType="БиблиотекаModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="БиблиотекаModel.Библиотекарь" Width="1.5" PointX="4.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="БиблиотекаModel.ИсторияВыдачиКниг" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="БиблиотекаModel.Книга" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="БиблиотекаModel.Фонд" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="БиблиотекаModel.Читатель" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="БиблиотекаModel.Штраф" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="БиблиотекаModel.FK_ИсторияВыдачиКниг_Книга" ManuallyRouted="false" />
+        <AssociationConnector Association="БиблиотекаModel.FK_ИсторияВыдачиКниг_Читатель" ManuallyRouted="false" />
+        <AssociationConnector Association="БиблиотекаModel.FK_Фонд_Книга" ManuallyRouted="false" />
+        <AssociationConnector Association="БиблиотекаModel.FK_Штраф_Книга" ManuallyRouted="false" />
+        <AssociationConnector Association="БиблиотекаModel.FK_Штраф_Читатель" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

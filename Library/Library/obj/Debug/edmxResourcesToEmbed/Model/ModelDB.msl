@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище БиблиотекаModelContainer" CdmEntityContainer="БиблиотекаEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="БиблиотекаModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Библиотекарь">
+      <EntityTypeMapping TypeName="БиблиотекаModel.Библиотекарь">
+        <MappingFragment StoreEntitySet="Библиотекарь">
+          <ScalarProperty Name="Номер" ColumnName="Номер" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Должность" ColumnName="Должность" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ИсторияРаботыСЧитателем" ColumnName="ИсторияРаботыСЧитателем" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ИсторияВыдачиКниг">
+      <EntityTypeMapping TypeName="БиблиотекаModel.ИсторияВыдачиКниг">
+        <MappingFragment StoreEntitySet="ИсторияВыдачиКниг">
+          <ScalarProperty Name="Номер" ColumnName="Номер" />
+          <ScalarProperty Name="НомерЧитателя" ColumnName="НомерЧитателя" />
+          <ScalarProperty Name="НомерКниги" ColumnName="НомерКниги" />
+          <ScalarProperty Name="ДатаВыдачи" ColumnName="ДатаВыдачи" />
+          <ScalarProperty Name="ДатаВозврата" ColumnName="ДатаВозврата" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Книга">
+      <EntityTypeMapping TypeName="БиблиотекаModel.Книга">
+        <MappingFragment StoreEntitySet="Книга">
+          <ScalarProperty Name="Номер" ColumnName="Номер" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Автор" ColumnName="Автор" />
+          <ScalarProperty Name="ГодИздания" ColumnName="ГодИздания" />
+          <ScalarProperty Name="ТипКниги" ColumnName="ТипКниги" />
+          <ScalarProperty Name="КоличествоЭкземпляров" ColumnName="КоличествоЭкземпляров" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Фонд">
+      <EntityTypeMapping TypeName="БиблиотекаModel.Фонд">
+        <MappingFragment StoreEntitySet="Фонд">
+          <ScalarProperty Name="Номер" ColumnName="Номер" />
+          <ScalarProperty Name="НомерКниги" ColumnName="НомерКниги" />
+          <ScalarProperty Name="Состояние" ColumnName="Состояние" />
+          <ScalarProperty Name="КоличествоЭкземпляров" ColumnName="КоличествоЭкземпляров" />
+          <ScalarProperty Name="МестоХранения" ColumnName="МестоХранения" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Читатель">
+      <EntityTypeMapping TypeName="БиблиотекаModel.Читатель">
+        <MappingFragment StoreEntitySet="Читатель">
+          <ScalarProperty Name="Номер" ColumnName="Номер" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="НомерЧитательскогоБилета" ColumnName="НомерЧитательскогоБилета" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Штраф">
+      <EntityTypeMapping TypeName="БиблиотекаModel.Штраф">
+        <MappingFragment StoreEntitySet="Штраф">
+          <ScalarProperty Name="Номре" ColumnName="Номре" />
+          <ScalarProperty Name="НомерЧитателя" ColumnName="НомерЧитателя" />
+          <ScalarProperty Name="НомерКниги" ColumnName="НомерКниги" />
+          <ScalarProperty Name="Дни" ColumnName="Дни" />
+          <ScalarProperty Name="Сумма" ColumnName="Сумма" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

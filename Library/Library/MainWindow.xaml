@@ -1,0 +1,36 @@
+﻿<Window x:Class="Library.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="AUTO"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Сколько дней просрочено?" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        <TextBox x:Name="DaysOverdueTextBox" Grid.Row="0" Grid.Column="1" Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Тип книги:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        <ComboBox x:Name="BookTypeComboBox" Grid.Row="1" Grid.Column="1" Margin="0,0,0,10">
+            <ComboBoxItem Content="Учебная"/>
+            <ComboBoxItem Content="Художественная"/>
+            <ComboBoxItem Content="Научная"/>
+        </ComboBox>
+
+        <Button x:Name="CalculateButton" Grid.Row="3" Grid.ColumnSpan="2" Content="Вывести результат" Click="CalculateButton_Click" Margin="0,10,0,10" Width="200"/>
+
+        <TextBlock x:Name="ResultTextBlock" Grid.Row="4" Grid.ColumnSpan="2" Text="Результат: " FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

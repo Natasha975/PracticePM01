@@ -1,0 +1,23 @@
+﻿<Window x:Class="Library.LibraryReaderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d" 
+        Title="Библиотека" Height="400" Width="600" WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="5">
+        <Label Content="Список читателей" HorizontalContentAlignment="Center"/>
+        <Grid Margin="10">
+            <DataGrid x:Name="ReaderDG" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="ReadersDataGrid_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ФИО" Binding="{Binding ФИО}" Width="*"/>
+                    <DataGridTextColumn Header="Номер читательского билета" Binding="{Binding НомерЧит}" Width="150"/>
+                    <DataGridTextColumn Header="Штраф" Binding="{Binding ШтрафЧит}" Width="100"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Button Content="Добавить" x:Name="AddReadirBt" Click="AddReadirBt_Click" Margin="0,10,10,0" Width="200" />
+        <Button Content="История выдачи" x:Name="HistoryBt" Click="HistoryBt_Click" Margin="0,10,10,0" Width="200" />
+    </StackPanel>
+</Window>

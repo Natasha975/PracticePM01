@@ -1,0 +1,21 @@
+﻿<Window x:Class="Library.ReaderHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="Библиотека" Height="450" Width="800">
+    <StackPanel Margin="5">
+        <Label Content="История выдачи книг" HorizontalContentAlignment="Center"/>
+        <Grid>
+            <DataGrid x:Name="HistoryDataGrid" AutoGenerateColumns="False" Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Наименование книги" Binding="{Binding НаименованиеКниги}" Width="*"/>
+                    <DataGridTextColumn Header="Дата выдачи" Binding="{Binding ДатаВыдачи, StringFormat=dd.M.yyyy}" Width="*"/>
+                    <DataGridTextColumn Header="Дата возврата" Binding="{Binding ДатаВозврата, StringFormat=dd.M.yyyy}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </StackPanel>
+</Window>
